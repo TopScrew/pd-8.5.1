@@ -1,0 +1,14 @@
+round = 0
+
+store-count = 100
+region-count = 2000000
+
+replica = 3
+
+leader-update-ratio = 0.06
+epoch-update-ratio = 0.0
+space-update-ratio = 0.0
+flow-update-ratio = 0.0
+no-update-ratio = 0.0
+
+sample = false
