@@ -29,7 +29,7 @@ COPY . .
 # https://github.com/mattn/go-sqlite3/issues/1164
 RUN CGO_CFLAGS="-D_LARGEFILE64_SOURCE" make
 
-FROM alpine:3.17
+FROM alpine:3.21.2
 
 COPY --from=builder /go/src/github.com/tikv/pd/bin/pd-server /pd-server
 COPY --from=builder /go/src/github.com/tikv/pd/bin/pd-ctl /pd-ctl
